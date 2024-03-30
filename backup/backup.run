@@ -15,15 +15,12 @@ backup() {
     opkg list-installed > packages-list.txt
     # 分别备份overlay、etc目录、和usr/share目录
     tar -czvf overlay_backup.tar.gz /overlay
-    tar -czvf etc_backup.tar.gz /etc
     # 将所有备份打包成一个文件
-    tar -czvf backup.tar.gz distfeeds.conf packages-list.txt overlay_backup.tar.gz etc_backup.tar.gz
+    tar -czvf backup.tar.gz distfeeds.conf packages-list.txt overlay_backup.tar.gz
     # 清理临时文件
-    rm -rf distfeeds.conf packages-list.txt overlay_backup.tar.gz etc_backup.tar.gz
+    rm -rf distfeeds.conf packages-list.txt overlay_backup.tar.gz
     green "系统备份文件已保存至 /tmp/upload/backup.tar.gz"
     light_magenta "请及时下载保存到电脑,恢复时使用系统——文件传输上传至/tmp/upload目录,再调用恢复脚本即可"
 }
-
-
 
 backup

@@ -18,9 +18,8 @@ restore() {
         # 恢复已安装软件列表
         opkg update
         cat packages-list.txt | cut -f 1 -d ' ' | xargs opkg install
-        # 分别恢复overlay、etc目录
+        # 恢复overlay
         tar -xzvf overlay_backup.tar.gz -C /
-        tar -xzvf etc_backup.tar.gz -C /
         green "恢复已完成, 系统正在重启....."
         reboot
     else
