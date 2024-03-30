@@ -30,5 +30,5 @@ wget -O restore.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestor
 
 ## 🚀 手动方式
 
-> 1、在release页面下载backup.run或restore.run
+> 1、在release页面下载backup.run或restore.run<br>
 > 2、打开iStore应用商店,点击手动安装,将run文件拖拽上去即可执行。
