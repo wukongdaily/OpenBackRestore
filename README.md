@@ -13,7 +13,7 @@
 
 ## 🚀 快速上手
 
-### 1. 生成备份`/tmp/upload/backup/backup.tar.gz`
+### 1. 生成备份`/tmp/upload/backup.tar.gz`
 ```bash
 wget -O backup.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestore/master/backup/backup.run && sh backup.run
 ```
