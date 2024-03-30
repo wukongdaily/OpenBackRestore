@@ -24,7 +24,8 @@ wget -O backup.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestore
 **使用前提** 将备份档案提前上传到 `/tmp/upload/` 目录,如图<br><br>![huifu](https://github.com/wukongdaily/OpenBackRestore/assets/143675923/cd111f10-e6aa-4011-a046-b3004f77c7eb)
 
 > 确定备份文件已经上传了 再执行如下命令即可恢复,恢复完成后会自动重启
-#### 恢复命令如下
+### ❤️恢复命令如下
+
 ```bash
 wget -O restore.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestore/master/backup/restore.run && sh restore.run
 ```
