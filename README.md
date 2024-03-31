@@ -11,7 +11,7 @@
 - 软路由iStoreOS(x86_64|Arm64) ✅
 - 其他机型：MT3000/2500/6000 （测试中,先等等）
 
-## 🚀 快速上手
+## 🚀 方法一 命令行方式
 
 ### 1. 生成备份`/tmp/upload/backup.tar.gz`
 ```bash
@@ -31,7 +31,7 @@ wget -O restore.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestor
 ```
 
 
-## 🚀 手动方式
+## 🚀 方法二 手动方式
 
 > 1、在release页面下载backup.run或restore.run<br>
 https://github.com/wukongdaily/OpenBackRestore/releases/latest <br>
