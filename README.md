@@ -17,6 +17,10 @@
 ```bash
 wget -O backup.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestore/master/backup/backup.run && sh backup.run
 ```
+> 备份仓库
+```bash 
+wget -O backup.run https://gitee.com/wukongdaily/OpenBackRestore/raw/master/backup/backup.run && sh backup.run
+```
 > 每次备份都是完整的,可以经常备份,比如每月备份一次
 
 ### 2. 恢复备份 
@@ -28,6 +32,10 @@ wget -O backup.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestore
 
 ```bash
 wget -O restore.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestore/master/backup/restore.run && sh restore.run
+```
+> 备份仓库
+```bash 
+wget -O restore.run https://gitee.com/wukongdaily/OpenBackRestore/raw/master/backup/restore.run && sh restore.run
 ```
 
 
