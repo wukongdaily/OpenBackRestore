@@ -27,7 +27,7 @@ wget -O backup.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestore
 wget -O backup.run https://gitee.com/wukongdaily/OpenBackRestore/raw/master/backup/backup.run && sh backup.run
 ```
 > 每次备份都是完整的,可以经常备份,比如每月备份一次
-### 如何自定义备份的路径？方法如下
+### 🤔 如何自定义备份的路径？方法如下
 https://github.com/wukongdaily/OpenBackRestore/wiki
 
 ### 2. 恢复备份 
