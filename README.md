@@ -12,7 +12,7 @@
 - 支持的OpenWrt系统列表如下
 - 1、软路由iStoreOS(x86_64 | ARM64) ✅
 - 2、兼容机型：MT3000/2500/6000 ✅
-- 3、OpenWrt by Kiddin(openwrt.ai 在线定制的)
+- 3、OpenWrt by Kiddin(openwrt.ai 在线定制的)✅
 
 > 特别说明：这三款机型的恢复工作是分两步走。<br>
 > 1、执行`sh restore.run `后先恢复到iStoreOS风格,执行完毕后会**提示用户上传你的备份档案。**<br>
