@@ -1,4 +1,4 @@
-# iStoreOS/OpenWrt一键备份与恢复脚本
+# iStoreOS/OpenWrt一键备份与恢复脚本 <img alt="GitHub release (by tag)" src="https://img.shields.io/github/downloads/wukongdaily/OpenBackRestore/v1.0/total?label=%E4%B8%8B%E8%BD%BD%E6%AC%A1%E6%95%B0&labelColor=%2332CD32&color=black">
 ## 🤔 这是什么？
 
 该项目可以轻松备份iStoreOS已安装的软件和配置,当系统恢复出厂设置或重置后，可以一键恢复原来的软件和配置。<br>
