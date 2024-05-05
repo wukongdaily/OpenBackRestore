@@ -28,7 +28,7 @@ wget -O backup.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestore
 ```
 > 备份仓库
 ```bash 
-wget -O backup.run https://mirror.ghproxy.com/https://raw.githubusercontent.com/wukongdaily/OpenBackRestore/master/backup/backup.run && sh backup.run
+wget -O backup.run https://cafe.cpolar.cn/wkdaily/OpenBackRestore/raw/branch/master/backup/backup.run && sh backup.run
 ```
 > 每次备份都是完整的,可以经常备份,比如每月备份一次
 ### 🤔 如何自定义备份的路径？方法如下
@@ -46,7 +46,7 @@ wget -O restore.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestor
 ```
 > 备份仓库
 ```bash 
-wget -O restore.run https://mirror.ghproxy.com/https://raw.githubusercontent.com/wukongdaily/OpenBackRestore/master/backup/restore.run && sh restore.run
+wget -O restore.run https://cafe.cpolar.cn/wkdaily/OpenBackRestore/raw/branch/master/backup/restore.run && sh restore.run
 ```
 
 
