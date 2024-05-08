@@ -23,10 +23,6 @@
 ## 🚀 方法一 命令行方式
 
 ### 1. 生成备份`/tmp/upload/backup.tar.gz`
-```bash
-wget -O backup.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestore/master/backup/backup.run && sh backup.run
-```
-> 备份仓库
 ```bash 
 wget -O backup.run https://cafe.cpolar.cn/wkdaily/OpenBackRestore/raw/branch/master/backup/backup.run && sh backup.run
 ```
@@ -41,10 +37,6 @@ https://github.com/wukongdaily/OpenBackRestore/wiki
 > 确定备份文件已经上传了 再执行如下命令即可恢复,恢复完成后会自动重启
 ### ❤️恢复命令如下
 
-```bash
-wget -O restore.run https://raw.githubusercontent.com/wukongdaily/OpenBackRestore/master/backup/restore.run && sh restore.run
-```
-> 备份仓库
 ```bash 
 wget -O restore.run https://cafe.cpolar.cn/wkdaily/OpenBackRestore/raw/branch/master/backup/restore.run && sh restore.run
 ```
