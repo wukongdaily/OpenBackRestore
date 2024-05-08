@@ -30,6 +30,16 @@ wget -O backup.run https://cafe.cpolar.cn/wkdaily/OpenBackRestore/raw/branch/mas
 ### 🤔 如何自定义备份的路径？方法如下
 https://github.com/wukongdaily/OpenBackRestore/wiki
 
+* 下载脚本
+```bash
+wget -O backup.run https://cafe.cpolar.cn/wkdaily/OpenBackRestore/raw/branch/master/backup/backup.run
+```
+### 举例说明 假设要备份到 `/mnt/sata1-4`目录
+* 执行备份
+```bash
+sh backup.run /mnt/sata1-4
+```
+
 ### 2. 恢复备份 
 
 **使用前提** 将备份档案提前上传到 `/tmp/upload/` 目录,如图<br><br>![huifu](https://github.com/wukongdaily/OpenBackRestore/assets/143675923/cd111f10-e6aa-4011-a046-b3004f77c7eb)
