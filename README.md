@@ -75,3 +75,7 @@ bash -c "$(curl --insecure -fsSL https://cafe.cpolar.cn/wkdaily/OpenBackRestore/
 ```
 bash -c "$(curl --insecure -fsSL https://cafe.cpolar.cn/wkdaily/OpenBackRestore/raw/branch/master/1panel/restore.sh)"
 ```
+
+# 扩展问题:如何备份到NAS？挂cifs即可。方法如图
+<img width="919" alt="cifs" src="https://github.com/wukongdaily/OpenBackRestore/assets/143675923/a185f505-76fe-4512-b5fe-35e9c28ee1e7">
+
