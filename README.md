@@ -62,18 +62,19 @@ https://github.com/wukongdaily/OpenBackRestore/releases/latest <br>
 
 
 # 在1panel的计划任务里做定时备份
-> 需要使用我的脚本方式运行1panel docker容器 详见这个项目的第三条命令：https://github.com/wukongdaily/OrangePiShell<br>
-> 因为默认情况下istoreos的应用商店里的1panel 并没有映射全部目录，只映射了/mnt，所以无法完成/overlay的备份。因此需要稍微改动一下。详见上述脚本
 
 ```
 bash -c "$(curl --insecure -fsSL https://cafe.cpolar.cn/wkdaily/OpenBackRestore/raw/branch/master/1panel/backup.sh)" -- /ahost/mnt/mmc1-4/backupSystem
 ```
 - 其中 `/ahost/mnt/mmc1-4/backupSystem` 按需修改为备份文件保存的位置<br>
   
-  
-<img width="952" alt="1Panel 2024-07-02 14-49-18888" src="https://github.com/wukongdaily/OpenBackRestore/assets/143675923/d022bbc2-425b-426d-9809-0546744a3a95">
+<img width="952" alt="1Panel 2024-07-02 14-49-18888" src="https://github.com/wukongdaily/OpenBackRestore/assets/143675923/d022bbc2-425b-426d-9809-0546744a3a95"><br>
+## 前提条件
+> https://github.com/wukongdaily/OrangePiShell  这个项目的第三条命令<br>
+> 因为默认情况下istoreos的应用商店里的1panel 并没有映射全部目录，只映射了/mnt<br>
+> 所以无法完成/overlay的备份。因此需要稍微改动一下。详见上述脚本
 
-
+<img width="216" alt="root@iStoreOS: ~ | :bin:login (iStoreOS) 2024-07-02 15-08-17" src="https://github.com/wukongdaily/OpenBackRestore/assets/143675923/7bf39fb5-5f8c-41e9-b75a-628f3763f7f4">
 
 # 恢复1panel计划任务产生的备份
 ```
