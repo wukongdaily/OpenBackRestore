@@ -59,7 +59,19 @@ https://github.com/wukongdaily/OpenBackRestore/releases/latest <br>
 > 2、打开iStore应用商店,点击手动安装,将run文件拖拽上去即可执行。<br>
 ![image](https://github.com/wukongdaily/OpenBackRestore/assets/143675923/54fdc034-ed4f-4f81-8aa7-0de556e0c3e2)
 
-# 💰打赏作者💰
-<img src="https://github.com/wukongdaily/tvhelper-docker/assets/143675923/1f92c5ba-1b6b-4967-a1ab-20697159badc" width="30%" />
 
 
+# 在1panel的计划任务里做定时备份
+
+```
+bash -c "$(curl --insecure -fsSL https://cafe.cpolar.cn/wkdaily/OpenBackRestore/raw/branch/master/1panel/backup.sh)" -- /mnt/mmc1-4/backupSystem
+```
+- 其中 `/mnt/mmc1-4/backupSystem` 按需修改为备份文件保存的位置<br>
+  
+<img width="950" alt="1Panel 2024-07-02 14-02-27" src="https://github.com/wukongdaily/OpenBackRestore/assets/143675923/54d963aa-2b33-417f-90d5-93fac094068f">
+
+
+# 恢复1panel计划任务产生的备份
+```
+bash -c "$(curl --insecure -fsSL https://cafe.cpolar.cn/wkdaily/OpenBackRestore/raw/branch/master/1panel/restore.sh)"
+```
