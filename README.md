@@ -82,6 +82,8 @@ bash -c "$(curl --insecure -fsSL https://cafe.cpolar.cn/wkdaily/OpenBackRestore/
 ```
 
 # 扩展问题:如何备份到NAS？挂cifs即可。方法如图
+## 使用前提：iStoreOS和NAS处于同一个网段。经典模型：软路由+无线路由器ap模式
+## 使用前提：第二种情况，NAS处于软路由的上一级。举例：光猫拨号的光猫连接了NAS，后面接了软路由iStoreOS，软路由作为二级路由器也同样可以访问NAS。
 <img width="919" alt="cifs" src="https://github.com/wukongdaily/OpenBackRestore/assets/143675923/a185f505-76fe-4512-b5fe-35e9c28ee1e7">
 
 # iStoreOS 如何挂载威联通NAS的共享文件夹。如图所示 注意大小写
