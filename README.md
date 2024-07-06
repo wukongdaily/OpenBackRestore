@@ -84,3 +84,6 @@ bash -c "$(curl --insecure -fsSL https://cafe.cpolar.cn/wkdaily/OpenBackRestore/
 # 扩展问题:如何备份到NAS？挂cifs即可。方法如图
 <img width="919" alt="cifs" src="https://github.com/wukongdaily/OpenBackRestore/assets/143675923/a185f505-76fe-4512-b5fe-35e9c28ee1e7">
 
+# iStoreOS 如何挂载威联通NAS的共享文件夹。如图所示注意共享文件夹的名称前面要加Containter
+![qnap](https://github.com/wukongdaily/OpenBackRestore/assets/143675923/d658b6f9-4669-4031-982b-b578433add49)
+
