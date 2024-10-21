@@ -12,7 +12,7 @@
 - 支持的OpenWrt系统列表如下
 - 1、软路由iStoreOS(x86_64 | ARM64) ✅
 - 2、兼容机型：MT3000/2500/6000 ✅
-- 3、OpenWrt（squashfs-combined）✅
+- 3、所有OpenWrt（squashfs-combined）✅
 - 4、OpenWrt（ext4-combined）❌
 > 只要是squashfs-combined类型的openwrt固件,理论上都可以兼容的。因为它们都是用了overlayfs文件系统的。
 
