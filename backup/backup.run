@@ -1,4 +1,5 @@
 #!/bin/sh
+
 red() { echo -e "\033[31m\033[01m[WARNING] $1\033[0m"; }
 green() { echo -e "\033[32m\033[01m[INFO] $1\033[0m"; }
 yellow() { echo -e "\033[33m\033[01m[NOTICE] $1\033[0m"; }
@@ -7,21 +8,39 @@ light_magenta() { echo -e "\033[95m\033[01m[NOTICE] $1\033[0m"; }
 light_yellow() { echo -e "\033[93m\033[01m[NOTICE] $1\033[0m"; }
 
 backup() {
+    # 获取当前时间戳（格式：年月日_时分秒）
+    local timestamp=$(date +%Y%m%d_%H%M%S)
+    
+    # 设置保留旧备份天数（默认7天）
+    local keep_days=7
+    
     # 检查是否传入自定义路径
     local backup_path=${1:-/tmp/upload}
     mkdir -p "$backup_path"
     cd "$backup_path" || exit
+    
     # 备份软件源配置
     cp /etc/opkg/distfeeds.conf distfeeds.conf
+    
     # 备份已安装软件列表
     opkg list-installed > packages-list.txt
+    
+    # 备份 overlay（系统配置和更改）
     tar -czvf overlay_backup.tar.gz /overlay
-    # 将所有备份打包成一个文件
-    tar -czvf backup.tar.gz distfeeds.conf packages-list.txt overlay_backup.tar.gz
+    
+    # 生成带时间戳的最终备份文件
+    local final_filename="backup_${timestamp}.tar.gz"
+    tar -czvf "$final_filename" distfeeds.conf packages-list.txt overlay_backup.tar.gz
+    
     # 清理临时文件
     rm -rf distfeeds.conf packages-list.txt overlay_backup.tar.gz
-    green "系统备份文件已保存至 $backup_path/backup.tar.gz"
-    light_magenta "请及时下载保存到电脑 供恢复时使用"
+    
+    # 自动清理旧备份（按修改时间）
+    yellow "正在清理${keep_days}天前的旧备份..."
+    find "$backup_path" -name "backup_*.tar.gz" -mtime +$keep_days -exec rm -fv {} \;
+    
+    green "✅ 系统备份文件已保存至：$backup_path/$final_filename"
+    light_magenta "💾 请及时下载保存到电脑供恢复时使用"
 }
 
 backup "$1"
