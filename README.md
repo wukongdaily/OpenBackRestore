@@ -92,4 +92,4 @@ bash -c "$(curl --insecure -fsSL https://cafe.cpolar.cn/wkdaily/OpenBackRestore/
 ![QNAP-TBS 2024-07-06 11-00-14](https://github.com/wukongdaily/OpenBackRestore/assets/143675923/99f8d5ec-c4da-4858-8846-2191b648d30b)
 ## ❤️赞助作者 ⬇️⬇️
 
-[![点击这里赞助我](https://img.shields.io/badge/点击这里赞助我-支持作者的项目-orange?logo=github)](https://wkdaily.cpolar.top/01)
+[![点击这里赞助我](https://img.shields.io/badge/点击这里赞助我-支持作者的项目-orange?logo=github)](https://wkdaily.cpolar.cn/01)
